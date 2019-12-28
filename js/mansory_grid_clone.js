@@ -21,3 +21,5 @@
     return parseInt(window.getComputedStyle(element).getPropertyValue(style));
   }
 })();
+
+// VER EXPLICACION EN: https://slite.com/api/s/note/DGwpkfstCqmtAP4AWBVzUC/Mansory-CSS-Grid-y-JS
