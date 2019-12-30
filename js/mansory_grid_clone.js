@@ -46,3 +46,25 @@ componentDidMount() {
 //   No se encontro algo que detecte la carga final de las imagenes para volver a forzar el resize
 
 // No funciona por el momento con react
+
+// IMPORTANTE: SE SOLUCIONO EL PROBLEMA CON REACT,
+// SI CARGA Y CARGARIA TAMBIEN EN ESTE SI NELPLUGIN
+// LA SOLUCION FUE:
+/*
+  <img
+            className="card__image"
+            src={urlToImage === null ? imageDefault : urlToImage}
+            alt="imagen de la noticia"
+            onError={this.addDefaultImage}
+            onLoad={this.launchResize}
+          />
+          */
+// LANZAR UN EVENTO UNA VEZ TEMRINADA LA CARGA DE LA IMAGEN,
+// SE LANZA UNA FUNCION QUE PROVOCA EL DISPATCH CO NEL EVENTO RESIZE
+
+/*
+ launchResize = () => {
+    window.dispatchEvent(new Event("resize"));
+    console.log("TERMINE DE CARGAR.................");
+  };
+*/
