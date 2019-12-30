@@ -25,3 +25,24 @@
 })();
 
 // VER EXPLICACION EN: https://slite.com/api/s/note/DGwpkfstCqmtAP4AWBVzUC/Mansory-CSS-Grid-y-JS
+
+
+
+// NORA IMPORTANTE:
+// se intengo agregar a react, pero tiene fallas,
+//cargando el script en el index de la app, o mandando a llamar en didComponent del item
+// aun con los event listeners de load o resize, no se acomodan los elementos una vez cargado, se intento provocando un resize
+//con el 
+/*
+componentDidMount() {
+    this.getSizeImages()
+    window.dispatchEvent(new Event("resize"));
+    console.log('distpach event..................');
+  }
+  */
+ 
+  // se corrige el problema, pero solo si las imagenes son pequeñas,
+// al parecer si las imagenes son grandes, ni provocando un resize forzado con el dispatchEvent se webkitConvertPointFromPageToNode, ya que las imagenes por ser tangrandes se tardan. 
+//   No se encontro algo que detecte la carga final de las imagenes para volver a forzar el resize
+
+// No funciona por el momento con react

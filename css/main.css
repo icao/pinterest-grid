@@ -38,5 +38,8 @@
   -o-object-fit: cover;
   object-fit: cover; }
 
+.content {
+  /*Es necesaroi en el content fijar un height de 100% para que abarque todo el largo y los gaps no se vean tan grandes, es un truco visual*/ }
+
 .content p {
   padding: 1em; }
